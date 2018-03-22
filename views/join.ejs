@@ -5,17 +5,14 @@
     <title><%= title %></title>
   </head>
   <body>
-    <h1>Player who's already connected:</h1>
-    <p>Player 1:</p>
-    <p id="p1"></p>
-
-    <p>Player 2:</p>
-    <p id="p2"></p>
-
-    <p id="finish"></p>
+    <form>
+      <input id="code" autocomplete="off" >
+      <button>JOIN</button>
+    </form>
+    <p id="joined"></p>
 
     <script src="/socket.io/socket.io.js"></script>
     <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
-    <script src="/javascripts/assemblyScript.js"></script>
+    <script src="/javascripts/joinScript.js"></script>
   </body>
 </html>
