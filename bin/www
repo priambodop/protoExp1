@@ -51,6 +51,9 @@ io.on('connection', function(socket){
   }),
   socket.on('you join', function(msg){
     io.emit('you join', msg);
+  }),
+  socket.on('wrong code', function(msg){
+    io.emit('you join', msg);
   });
 
 });
